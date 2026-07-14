@@ -31,6 +31,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('gfortran') }}
     - make
+    - sed        # build.sh patches the upstream Makefile for macOS; needs GNU semantics
 
 test:
   commands:
