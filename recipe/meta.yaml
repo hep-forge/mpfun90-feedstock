@@ -29,7 +29,7 @@ requirements:
   build:
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
-    - {{ compiler('gfortran') }}
+    - {{ compiler('fortran') }}
     - make
     - sed        # build.sh patches the upstream Makefile for macOS; needs GNU semantics
 
